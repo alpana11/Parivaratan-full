@@ -1,4 +1,4 @@
-# ♻️ Parivartan – Smart Solid Waste Management Platform  
+# ♻️ Parivartan – Smart Waste Management Platform  
 
 Parivartan is a technology-driven waste management platform that connects citizens, waste collection partners, and administrators in one unified system.  
 
