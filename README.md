@@ -1,135 +1,284 @@
-# ♻️ Parivartan – Smart Waste Management Platform  
+# ♻️ Parivartan – Smart Waste Management Platform
 
-Parivartan is a technology-driven waste management platform that connects citizens, waste collection partners, and administrators in one unified system.  
+> **Turning Awareness into Action — One Household at a Time**
 
-It promotes proper solid waste segregation, real-time tracking, environmental impact monitoring, and reward-based participation.
-
----
-
-# 🔄 System Pathway (How It Works)
-
-## 👤 User Flow
-
-1. User registers / logs in.
-2. User uploads waste image (optional).
-3. AI suggests correct waste category.
-4. User schedules pickup (select category, address, time).
-5. Request is stored in Firestore database.
-6. Nearby approved partner gets notification.
-7. User can track pickup status in real time.
-8. Partner collects waste and marks request as completed.
-9. User receives confirmation and reward points.
-10. Environmental impact data is updated on dashboard.
+Parivartan is an AI-powered, technology-driven waste management platform that digitally connects **citizens**, **waste collection partners**, and **administrators** in one unified ecosystem. It promotes proper solid waste segregation at source, real-time pickup tracking, environmental impact monitoring, and reward-based participation — aligned with India's **Swachh Bharat Mission**.
 
 ---
 
-## 👨‍💼 Partner Flow
+## 🌍 The Problem We Solve
 
-1. Partner registers on platform.
-2. Admin verifies and approves partner.
-3. Partner logs into dashboard.
-4. Views assigned waste pickup requests.
-5. Accepts request and navigates to pickup location.
-6. Updates status: Assigned → In Progress → Completed.
-7. Earns reward points for successful collection.
-8. Collection data updates in admin analytics panel.
+India generates over **62 million tonnes** of waste annually. Despite cleanliness campaigns, the most critical step — **segregation at source** — remains widely ignored.
 
----
+- Households mix biodegradable, plastic, and recyclable waste
+- Recyclable materials end up in landfills due to improper separation
+- Rural and semi-urban areas lack structured digital waste solutions
+- No single platform connects citizens, collectors, and recyclers
 
-## 🧑‍💻 Admin Flow
-
-1. Admin logs into admin dashboard.
-2. Reviews and approves partner registrations.
-3. Monitors all pickup requests.
-4. Tracks waste collection statistics.
-5. Analyzes environmental impact (CO₂ reduction).
-6. Manages rewards and system settings.
+**Parivartan bridges this gap.**
 
 ---
 
-# 👨‍💼 Partner & Admin Panel  
+## 🔄 How It Works
 
-This module is designed for waste collection partners and system administrators.
+### 👤 User Flow
+1. Register / Log in to the app
+2. Upload a waste image (optional)
+3. AI identifies and suggests the correct waste category
+4. Schedule a pickup — select category, address, and time
+5. Request is stored in Firestore; nearby partner gets notified
+6. Track pickup status in real time
+7. Partner collects waste and marks request as completed
+8. User receives confirmation + reward points
+9. Environmental impact dashboard is updated automatically
 
-## 🔐 Authentication & Approval  
-- Secure login/signup using Firebase Authentication  
-- Admin approval system for partner verification  
-- Role-based access control (Admin / Partner)
+### 👨‍💼 Partner Flow
+1. Register as a collection partner
+2. Admin verifies and approves the partner account
+3. View assigned waste pickup requests on dashboard
+4. Accept request and navigate to pickup location
+5. Update status: `Assigned → In Progress → Completed`
+6. Earn reward points for successful collections
+7. Collection data syncs with admin analytics panel
 
-## 📦 Waste Request Management  
-- View assigned waste pickup requests  
-- Accept or reject requests  
-- Update status (Assigned → In Progress → Completed)  
-- Track pickup history  
-
-## 📊 Real-Time Dashboard  
-- Monitor active and completed requests  
-- View total waste collected  
-- Track CO₂ reduction metrics  
-- Analyze area-wise performance  
-
-## 🗺️ Route & Location Tracking  
-- View user pickup locations  
-- Plan optimized collection routes  
-- Real-time request tracking  
-
-## 🎁 Rewards & Incentives  
-- Earn reward points for completed pickups  
-- Redeem points for vouchers  
-- View transaction history  
-
-## 👤 Profile & Verification  
-- Manage organization details  
-- Upload verification documents  
-- Track approval status  
+### 🧑‍💻 Admin Flow
+1. Log into admin dashboard
+2. Review and approve partner registrations
+3. Monitor all active and completed pickup requests
+4. Track waste collection statistics and CO₂ reduction metrics
+5. Manage rewards, users, and system settings
 
 ---
 
-# 👤 User Panel  
+## ✨ Key Features
 
-This module is designed for citizens who want to dispose of waste responsibly.
+### 🤖 AI-Based Waste Identification
+- Upload an image of your waste
+- AI model suggests the correct category (Dry / Wet / E-waste / Plastic)
+- Encourages proper segregation at source
 
-## 📝 Request Waste Pickup  
-- Schedule waste collection  
-- Select waste category (Dry / Wet / E-waste / Plastic)  
-- Add pickup address and preferred time  
+### 📍 Real-Time Tracking
+- Live tracking of assigned waste collection partners
+- Status updates at every stage of the pickup process
+- Instant confirmation after collection
 
-## 🤖 AI-Based Waste Identification  
-- Upload image of waste  
-- AI suggests correct waste category  
-- Encourages proper segregation at source  
+### 🎖️ Reward System
+- Users earn points for responsible waste segregation
+- Partners earn points for successful pickups
+- Points redeemable for vouchers and incentives
 
-## 📍 Real-Time Tracking  
-- Track assigned partner  
-- View pickup status updates  
-- Get confirmation after collection  
+### 🌱 Environmental Impact Dashboard
+- Personal contribution metrics per user
+- Total CO₂ reduction tracked across the platform
+- Area-wise collection performance analytics
 
-## 🌱 Impact Awareness  
-- View personal contribution to waste reduction  
-- Track environmental impact metrics  
-
-## 🎖️ Reward System  
-- Earn points for proper segregation  
-- Redeem rewards and vouchers  
-- Encourage responsible behavior  
-
----
-
-# 🛠️ Tech Stack  
-
-Frontend: React 18, TypeScript, Vite  
-Styling: Tailwind CSS  
-Backend: Firebase (Authentication, Firestore)  
-File Storage: Cloudinary  
-Charts: Recharts  
-Routing: React Router  
+### 🔐 Role-Based Access Control
+- Separate secure portals for Citizens, Partners, and Admins
+- Firebase Authentication with admin approval workflow
+- Verified partner onboarding system
 
 ---
 
-# 🎯 Vision  
+## 🛠️ Tech Stack
 
-Parivartan is more than a waste management app.  
-It is a digital ecosystem that builds accountability, encourages segregation at source, and creates a sustainable connection between citizens and waste management partners.
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 18, TypeScript, Vite |
+| Mobile | Expo, React Native, TypeScript |
+| Styling | Tailwind CSS |
+| Backend | Firebase (Authentication + Firestore) |
+| File Storage | Cloudinary |
+| Charts & Analytics | Recharts |
+| Routing | React Router |
+| On-Device AI | TensorFlow Lite |
+| Cloud AI | Google Gemini | 
+| APIReal-Time Processing | Pathway|
+
+---
+
+---
+
+## 🤖 AI & Intelligence Layer
+Parivartan uses a multi-model AI architecture combining on-device inference, cloud intelligence, and real-time data processing.
+
+### 1️⃣ On-Device AI — TensorFlow Lite (Mobile App)
+The mobile app runs a TensorFlow Lite model directly on the user's device for instant waste image classification — no internet required.
+Feature     Detail
+Model Type  Image Classification (Waste Categories)
+Framework   TensorFlow LiteWorks 
+Offline     ✅ Yes
+Categories  Plastic / Paper / Metal
+
+#### Why TensorFlow Lite?
+
+Optimized and lightweight for mobile hardware
+Offline capability — works in low-connectivity rural areas
+Faster response with no server round-trip
+Reduces backend load and cost
+
+
+### 2️⃣ Cloud AI — Gemini API (Web Platform)
+The web platform integrates Google Gemini for higher-level intelligence and data-driven insights beyond simple classification.
+
+#### Gemini powers:
+
+📊 Intelligent waste analytics and trend detection
+🌱 Environmental impact suggestions and recommendations
+🧠 AI-powered decision support for administrators
+📈 Smart performance insights for collection partners
+
+
+### 3️⃣ Real-Time Data Processing — Pathway
+Pathway handles all live data streaming and dynamic analytics across the platform.
+
+#### Pathway enables:
+
+⚡ Real-time waste data streaming as pickups happen
+📡 Live analytics generation across all user activity
+🌍 Dynamic environmental impact metrics (CO₂ reduction)
+📊 Performance tracking updated without page refresh
+
+---
+
+---
+## 📁 Project Structure
+```
+Parivaratan-full/
+│
+├── Imagine/                          # 🌐 Web Application (React + Vite)
+│   ├── src/
+│   │   ├── components/               # Reusable UI components
+│   │   │   ├── admin/                # Admin panel components
+│   │   │   ├── partner/              # Partner dashboard components
+│   │   │   └── shared/               # Shared/common components
+│   │   ├── pages/                    # Route-level pages
+│   │   │   ├── AdminDashboard.tsx
+│   │   │   ├── PartnerDashboard.tsx
+│   │   │   └── Login.tsx
+│   │   ├── services/                 # Firebase & API calls
+│   │   │   ├── firebase.ts
+│   │   │   ├── auth.ts
+│   │   │   └── gemini.ts
+│   │   ├── hooks/                    # Custom React hooks
+│   │   ├── context/                  # React context & state
+│   │   ├── utils/                    # Helper functions
+│   │   └── main.tsx                  # App entry point
+│   ├── public/                       # Static assets
+│   ├── index.html
+│   ├── vite.config.ts
+│   ├── tailwind.config.js
+│   ├── tsconfig.json
+│   ├── package.json
+│   └── .env.example                  # Environment variable template
+│
+├── Parivartan/                       # 📱 Mobile Application (Expo + React Native)
+│   ├── app/                          # Expo Router screens
+│   │   ├── (tabs)/                   # Bottom tab navigation
+│   │   ├── pickup/                   # Pickup scheduling screens
+│   │   ├── tracking/                 # Real-time tracking screens
+│   │   └── rewards/                  # Rewards & points screens
+│   ├── components/                   # Reusable mobile components
+│   ├── services/                     # Firebase & TensorFlow Lite services
+│   │   ├── firebase.ts
+│   │   ├── wasteClassifier.ts        # TensorFlow Lite AI model
+│   │   └── pathway.ts                # Real-time data streaming
+│   ├── assets/                       # Images, icons, fonts
+│   │   └── ml-model/                 # TFLite model files
+│   │       └── waste_classifier.tflite
+│   ├── hooks/
+│   ├── constants/
+│   ├── app.json
+│   ├── package.json
+│   └── tsconfig.json
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+- Node.js v18+
+- npm or yarn
+- Firebase project with Firestore enabled
+- Cloudinary account
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/alpana11/parivartan.git
+cd parivartan
+```
+
+### 2. Setup Frontend (Web App)
+```bash
+cd frontend
+npm install
+cp .env.example .env
+# Add your Firebase and Cloudinary credentials to .env
+npm run dev
+```
+
+### 3. Setup Mobile App
+```bash
+cd mobile
+npm install
+npx expo start
+```
+
+### 4. Environment Variables
+Create a `.env` file in `/frontend` with:
+```env
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+VITE_CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+```
+
+---
+
+## 🗺️ Roadmap
+
+- [x] User waste pickup scheduling
+- [x] AI-based waste category identification
+- [x] Real-time pickup tracking
+- [x] Partner and Admin dashboards
+- [x] Reward points system
+- [x] Offline mode for low-connectivity areas
+- [x] Carbon credit tracking
+
+---
+
+## 📊 Market Opportunity
+
+- India's waste management market: **₹35,000+ crore**
+- Target: **500+ Tier 2 and Tier 3 cities** — starting with Marathwada region
+- Aligned with **Swachh Bharat Mission 2.0** national goals
+- Addresses 62 million tonnes of annual solid waste generation
+
+---
+
+## 👥 Team
+
+| Name | Role | GitHub |
+|------|------|--------|
+| [Alpana Pardesi] | Web Developer | [@alpana11](https://github.com/alpana11) |
+| [Kishori Birari] | Backend Developer | [@kishori-12](https://github.com/Kishori-12) |
+| [Shraddha Pawar] | Mobile Developer | [@ShraddhaPawar05](https://github.com/ShraddhaPawar05) |
+
+---
+
+## 🙏 Acknowledgements
+
+- [Swachh Bharat Mission](https://swachhbharat.mygov.in/) for inspiring this initiative
+- The citizens of Chhatrapati Sambhajinagar for motivating us to act
+- All open-source contributors whose tools power this project
+
+---
+
 
 Together, we move toward a cleaner and greener future.
 
@@ -138,3 +287,11 @@ Together, we move toward a cleaner and greener future.
 
 - Alpana (Project Owner)
 - Kishori (Backend Contributor)
+
+
+=======
+<div align="center">
+  <strong>Parivartan — Not just an app. A responsibility.</strong><br/>
+  Made with ❤️ for a cleaner, greener Bharat 🇮🇳
+</div>
+
