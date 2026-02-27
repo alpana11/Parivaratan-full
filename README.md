@@ -279,7 +279,19 @@ VITE_CLOUDINARY_CLOUD_NAME=your_cloudinary_name
 
 ---
 
+
+Together, we move toward a cleaner and greener future.
+
+
+# 🤝 Contributors
+
+- Alpana (Project Owner)
+- Kishori (Backend Contributor)
+
+
+=======
 <div align="center">
   <strong>Parivartan — Not just an app. A responsibility.</strong><br/>
   Made with ❤️ for a cleaner, greener Bharat 🇮🇳
 </div>
+
