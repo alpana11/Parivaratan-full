@@ -132,3 +132,9 @@ Parivartan is more than a waste management app.
 It is a digital ecosystem that builds accountability, encourages segregation at source, and creates a sustainable connection between citizens and waste management partners.
 
 Together, we move toward a cleaner and greener future.
+
+
+# 🤝 Contributors
+
+- Alpana (Project Owner)
+- Kishori (Backend Contributor)
