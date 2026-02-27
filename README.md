@@ -8,7 +8,7 @@ Parivartan is an AI-powered, technology-driven waste management platform that di
 
 ## 🌍 The Problem We Solve
 
-India generates over **62 million tonnes** of solid waste annually. Despite cleanliness campaigns, the most critical step — **segregation at source** — remains widely ignored.
+India generates over **62 million tonnes** of waste annually. Despite cleanliness campaigns, the most critical step — **segregation at source** — remains widely ignored.
 
 - Households mix biodegradable, plastic, and recyclable waste
 - Recyclable materials end up in landfills due to improper separation
@@ -109,7 +109,7 @@ Framework   TensorFlow LiteWorks
 Offline     ✅ Yes
 Categories  Plastic / Paper / Metal
 
-Why TensorFlow Lite?
+#### Why TensorFlow Lite?
 
 Optimized and lightweight for mobile hardware
 Offline capability — works in low-connectivity rural areas
@@ -120,7 +120,7 @@ Reduces backend load and cost
 ### 2️⃣ Cloud AI — Gemini API (Web Platform)
 The web platform integrates Google Gemini for higher-level intelligence and data-driven insights beyond simple classification.
 
-Gemini powers:
+#### Gemini powers:
 
 📊 Intelligent waste analytics and trend detection
 🌱 Environmental impact suggestions and recommendations
@@ -131,7 +131,7 @@ Gemini powers:
 ### 3️⃣ Real-Time Data Processing — Pathway
 Pathway handles all live data streaming and dynamic analytics across the platform.
 
-Pathway enables:
+#### Pathway enables:
 
 ⚡ Real-time waste data streaming as pickups happen
 📡 Live analytics generation across all user activity
@@ -265,7 +265,7 @@ VITE_CLOUDINARY_CLOUD_NAME=your_cloudinary_name
 
 | Name | Role | GitHub |
 |------|------|--------|
-| [Alpana Pardesi] | web Developer | [@alpana11](https://github.com/alpana11) |
+| [Alpana Pardesi] | Web Developer | [@alpana11](https://github.com/alpana11) |
 | [Kishori Birari] | Backend Developer | [@kishori-12](https://github.com/Kishori-12) |
 | [Shraddha Pawar] | Mobile Developer | [@ShraddhaPawar05](https://github.com/ShraddhaPawar05) |
 
